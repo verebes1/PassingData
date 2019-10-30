@@ -11,19 +11,25 @@ import UIKit
 class ViewController: UITableViewController {
     
     let persons = ["Robert", "Peter", "Dave"]
-    var selectedPerson = -1
+    var selectedPerson = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //Send Data
-        if let personVC = segue.destination as? PersonViewController {
-            print(persons[selectedPerson])
-            personVC.personDetails = persons[selectedPerson]
-        }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        //Send Data
+//        if let personVC = segue.destination as? PersonViewController {
+//            print(persons[selectedPerson])
+//            personVC.personDetails = persons[selectedPerson]
+//        }
+//    }
+    
+    @IBSegueAction
+    private func showPerson(coder: NSCoder, sender: Any?, segueIdentifier: String?)
+        -> PersonViewController? {
+        return PersonViewController(coder: coder, personDetails: persons[selectedPerson])
     }
     
     

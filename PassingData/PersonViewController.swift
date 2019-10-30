@@ -10,23 +10,20 @@ import UIKit
 
 class PersonViewController: UIViewController {
     
-    var personDetails: String?
-    // var personDetails: String = "Unknown"
-    // Then you just need to do a conditional check if the person is not an unknown person
-    // You can have enums for that.
-    // It is sensible to use optionals.
-
+    var personDetails: String
+    
+    init?(coder: NSCoder, personDetails: String) {
+      self.personDetails = personDetails
+      super.init(coder: coder)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     @IBOutlet weak var personLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        if let personDetails = personDetails {
-            personLabel.text = personDetails
-        }
-//        Non optional approach below:
-//      if personDetails != "Unknown" {
-//          personLabel.text = personDetails
-//    }
+        personLabel.text = personDetails
     }
 }

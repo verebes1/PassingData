@@ -32,7 +32,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="Vds-WQ-f9b"/>
                     <connections>
-                        <segue destination="ZJ6-dg-iP1" kind="show" identifier="ShowPerson" id="Dcx-QZ-aBK"/>
+                        <segue destination="ZJ6-dg-iP1" kind="show" identifier="ShowPerson" destinationCreationSelector="showPersonWithCoder:sender:segueIdentifier:" id="eoS-kV-d2S"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQB-16-5GY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
