@@ -18,14 +18,19 @@ class ViewController: UITableViewController {
         
     }
     
+//    @IBSegueAction
+//    private func showPerson(coder: NSCoder, sender: Any?, segueIdentifier: String?)
+//        -> NavViewController? {
+//            let navController = NavViewController(coder: coder, personDetails: persons[selectedPerson])
+//            if let rootVC = navController?.viewControllers.first as? PersonViewController {
+//                rootVC.personDetails = navController?.personDetails ?? "None"
+//            }
+//        return navController
+//    }
     @IBSegueAction
     private func showPerson(coder: NSCoder, sender: Any?, segueIdentifier: String?)
-        -> NavViewController? {
-            let navController = NavViewController(coder: coder, personDetails: persons[selectedPerson])
-            if let rootVC = navController?.viewControllers.first as? PersonViewController {
-                rootVC.personDetails = navController?.personDetails ?? "None"
-            }
-        return navController
+        -> PersonViewController? {
+        return PersonViewController(coder: coder, personDetails: persons[selectedPerson])
     }
     
     

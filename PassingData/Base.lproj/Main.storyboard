@@ -32,7 +32,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="Vds-WQ-f9b"/>
                     <connections>
-                        <segue destination="W6d-Om-NMx" kind="presentation" identifier="ShowPerson" destinationCreationSelector="showPersonWithCoder:sender:segueIdentifier:" id="2dZ-MF-guZ"/>
+                        <segue destination="W6d-Om-NMx" kind="presentation" identifier="ShowPerson" id="MZZ-L2-4Pa"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQB-16-5GY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -100,7 +100,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ZJ6-dg-iP1" kind="relationship" relationship="rootViewController" id="9ae-Sb-1bP"/>
+                        <segue destination="ZJ6-dg-iP1" kind="relationship" relationship="rootViewController" destinationCreationSelector="showPersonWithCoder:sender:segueIdentifier:" id="9ae-Sb-1bP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aL6-iu-pyx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
