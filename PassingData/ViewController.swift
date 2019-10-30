@@ -8,12 +8,46 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
+    
+    let persons = ["Robert", "Peter", "Dave"]
+    var selectedPerson = -1
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //Send Data
+        if let personVC = segue.destination as? PersonViewController {
+            print(persons[selectedPerson])
+            personVC.personDetails = persons[selectedPerson]
+        }
+    }
+    
+    
+    //MARK:- TableView Methods
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return persons.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "personCell", for: indexPath)
+        cell.textLabel?.text = persons[indexPath.row]
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedPerson = indexPath.row
+        performSegue(withIdentifier: "ShowPerson", sender: self)
+    }
+    
 
 
 }

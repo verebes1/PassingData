@@ -13,6 +13,7 @@
 		4F4935B12369B3BC009966E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4935AF2369B3BC009966E3 /* Main.storyboard */; };
 		4F4935B32369B3C1009966E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F4935B22369B3C1009966E3 /* Assets.xcassets */; };
 		4F4935B62369B3C1009966E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4935B42369B3C1009966E3 /* LaunchScreen.storyboard */; };
+		4F4935BE2369B491009966E3 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4935BD2369B491009966E3 /* PersonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4F4935B22369B3C1009966E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F4935B52369B3C1009966E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F4935B72369B3C1009966E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F4935BD2369B491009966E3 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				4F4935A92369B3BC009966E3 /* AppDelegate.swift */,
 				4F4935AB2369B3BC009966E3 /* SceneDelegate.swift */,
 				4F4935AD2369B3BC009966E3 /* ViewController.swift */,
+				4F4935BD2369B491009966E3 /* PersonViewController.swift */,
 				4F4935AF2369B3BC009966E3 /* Main.storyboard */,
 				4F4935B22369B3C1009966E3 /* Assets.xcassets */,
 				4F4935B42369B3C1009966E3 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				4F4935AE2369B3BC009966E3 /* ViewController.swift in Sources */,
 				4F4935AA2369B3BC009966E3 /* AppDelegate.swift in Sources */,
 				4F4935AC2369B3BC009966E3 /* SceneDelegate.swift in Sources */,
+				4F4935BE2369B491009966E3 /* PersonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
