@@ -25,5 +25,6 @@ class PersonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         personLabel.text = personDetails
+        title = personDetails
     }
 }
