@@ -10,10 +10,22 @@ import UIKit
 
 class NavViewController: UINavigationController {
 
+    
+    var personDetails: String
+    
+    init?(coder: NSCoder, personDetails: String) {
+      self.personDetails = personDetails
+      super.init(coder: coder)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        title = personDetails
     }
     
 

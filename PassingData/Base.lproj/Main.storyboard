@@ -32,7 +32,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="Vds-WQ-f9b"/>
                     <connections>
-                        <segue destination="ZJ6-dg-iP1" kind="show" identifier="ShowPerson" destinationCreationSelector="showPersonWithCoder:sender:segueIdentifier:" id="aRT-AK-aPx"/>
+                        <segue destination="W6d-Om-NMx" kind="presentation" identifier="ShowPerson" destinationCreationSelector="showPersonWithCoder:sender:segueIdentifier:" id="2dZ-MF-guZ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQB-16-5GY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -44,11 +44,11 @@
             <objects>
                 <viewController id="ZJ6-dg-iP1" customClass="PersonViewController" customModule="PassingData" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DiR-jJ-V14">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ds1-dv-Uqc">
-                                <rect key="frame" x="166.5" y="323" width="42" height="21"/>
+                                <rect key="frame" x="166.5" y="313" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -88,14 +88,14 @@
             </objects>
             <point key="canvasLocation" x="1152.8" y="89.505247376311857"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Nav View Controller-->
         <scene sceneID="FbZ-4M-WZT">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W6d-Om-NMx" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W6d-Om-NMx" customClass="NavViewController" customModule="PassingData" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="zZk-Lb-KuQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fda-xU-ae4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -105,10 +105,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aL6-iu-pyx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3210" y="-573"/>
+            <point key="canvasLocation" x="3116" y="90"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="aRT-AK-aPx"/>
-    </inferredMetricsTieBreakers>
 </document>
