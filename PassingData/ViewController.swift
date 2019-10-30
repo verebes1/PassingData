@@ -18,14 +18,6 @@ class ViewController: UITableViewController {
         
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        //Send Data
-//        if let personVC = segue.destination as? PersonViewController {
-//            print(persons[selectedPerson])
-//            personVC.personDetails = persons[selectedPerson]
-//        }
-//    }
-    
     @IBSegueAction
     private func showPerson(coder: NSCoder, sender: Any?, segueIdentifier: String?)
         -> PersonViewController? {
@@ -53,8 +45,5 @@ class ViewController: UITableViewController {
         selectedPerson = indexPath.row
         performSegue(withIdentifier: "ShowPerson", sender: self)
     }
-    
-
-
 }
 
