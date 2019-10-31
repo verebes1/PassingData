@@ -88,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="1152.8" y="89.505247376311857"/>
         </scene>
-        <!--Nav View Controller-->
+        <!--Navigation Controller-->
         <scene sceneID="FbZ-4M-WZT">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W6d-Om-NMx" customClass="NavViewController" customModule="PassingData" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W6d-Om-NMx" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="zZk-Lb-KuQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fda-xU-ae4">
