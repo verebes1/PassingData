@@ -10,7 +10,7 @@ import UIKit
 
 class PersonViewController: UIViewController {
     
-    var personDetails: String
+    let personDetails: String
     
     init?(coder: NSCoder, personDetails: String) {
       self.personDetails = personDetails
